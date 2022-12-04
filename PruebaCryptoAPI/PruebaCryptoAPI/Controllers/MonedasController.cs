@@ -18,7 +18,7 @@ namespace PruebaCryptoAPI.Controllers
             using (var db = new crypto_dbContext())
             {
                 //return db.Monedas.ToList();
-                return db.Monedas.Include(a => a.Cuenta).ToList();
+                return db.Monedas.Include(a => a.Cuenta).ToList();//lista moneda
             }
         }
 
